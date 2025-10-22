@@ -1,14 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const {
-    allBooks,
-    bookDetail
-} = require('../controller/BookController');
+    allCategory
+} = require('../controller/CategoryController');
 
 router.use(express.json());
 
-router.get('/', allBooks);
-router.get('/:id', bookDetail);
+router.get('/', allCategory);
+
 
 
 module.exports = router;
